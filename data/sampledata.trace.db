@@ -1,0 +1,6 @@
+2022-08-12 17:22:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+select accounts0_.account_id as account_1_0_0_, accounts0_.account_type as account_2_0_0_, accounts0_.currency as currency3_0_0_, accounts0_.opening_date as opening_4_0_0_, accounts0_.status as status5_0_0_, accounts0_.status_update_date_time as status_u6_0_0_ from statements accounts0_ where accounts0_.account_id=? [42102-200]
+2022-08-12 18:15:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+select accounts0_.account_id as account_1_0_0_, accounts0_.account_type as account_2_0_0_, accounts0_.currency as currency3_0_0_, accounts0_.opening_date as opening_4_0_0_, accounts0_.status as status5_0_0_, accounts0_.status_update_date_time as status_u6_0_0_ from statements accounts0_ where accounts0_.account_id=? [42102-200]
