@@ -1,8 +1,6 @@
 package com.example.demo.OpenBankingDemo.accounts;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
-import java.util.Date;
 
 @Entity
 @Table
