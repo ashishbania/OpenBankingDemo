@@ -1,5 +1,7 @@
 package com.example.demo.OpenBankingDemo.accounts;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +15,7 @@ import java.util.stream.Stream;
 @RequestMapping(path = "/api/v1/accounts")
 public class AccountsController {
 
+    Logger logger = LoggerFactory.getLogger(AccountsController.class);
     private final AccountsService accountsService;
     @Autowired
     private final AccountService accountService;
@@ -28,6 +31,7 @@ public class AccountsController {
     @GetMapping(path = "/{id}")
     public Accounts getAccountById(@PathVariable("id") Integer id){
         //return  Stream.of(accountService.getAccounts(id)).map(x-> x.getStatus().toLowerCase()).collect(Collectors.toList());
+        logger.info("Accounts Controller with getById called");
         return accountService.getAccounts(id);
     }
 
